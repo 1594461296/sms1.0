@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.app02.dao.UserMapper">
+<select id="findAll" resultType="com.briup.app02.bean.User">
+    select* from poll_user
+</select>
+
+<select id="findById" parameterType="long" resultType="com.briup.app02.bean.User">
+select* from poll_user where id=#{id}
+</select>
+
+<update id="updateUser" parameterType="com.briup.app02.bean.User">
+update poll_user set name=#{name},gender=#{gender},birth=#{birth},hiredate=#{hiredate}  where id=#{id}
+</update>
+
+<insert id="save" parameterType="com.briup.app02.bean.User">
+insert into poll_user values(null,#{name},#{gender},#{birth},#{hiredate})
+</insert>
+
+<delete id="delUserById" parameterType="com.briup.app02.bean.User">
+delete from poll_user where id=#{id}
+</delete>
+
+<delete id="deleteAll" parameterType="com.briup.app02.bean.User">
+delete from poll-user
+</delete>
+
+</mapper>
