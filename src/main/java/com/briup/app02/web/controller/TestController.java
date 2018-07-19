@@ -1,10 +1,10 @@
-package com.briup.app02.web.controller;
+/*package com.briup.app02.web.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
+*//**
  * 路由的命名空间
  * http://127.0.0.1:8080 可以访问到当前项目
  * http://127.0.0.1:8080/test 可以访问到当前项目TestController这个类
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * 浏览器发送请求 --> 服务接收请求 --> 服务返回响应 --> 浏览器接收回应
  * http协议！！！
  * 
- * */
+ * *//*
 @RestController
 @RequestMapping("/test")
 public class TestController {
@@ -47,3 +47,4 @@ public class TestController {
 
 
 
+*/
